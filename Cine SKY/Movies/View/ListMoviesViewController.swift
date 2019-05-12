@@ -40,6 +40,12 @@ class ListMoviesViewController: UIViewController, Storyboarded {
                 GlobalAlert(with: self, msg: msg).show()
         })
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let movie = sender as? Movie, let vc = segue.destination as? MovieDetailTableViewController {
+            vc.movie = movie
+        }
+    }
 }
 
 extension ListMoviesViewController: UICollectionViewDelegate, UICollectionViewDataSource {
@@ -54,5 +60,11 @@ extension ListMoviesViewController: UICollectionViewDelegate, UICollectionViewDa
         guard let movie = movies?[indexPath.row] else {return UICollectionViewCell()}
         cell.fillCell(movie: movie)
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        collectionView.deselectItem(at: indexPath, animated: true)
+        let movie = movies?[indexPath.row]
+        performSegue(withIdentifier: "segueDetail", sender: movie)
     }
 }

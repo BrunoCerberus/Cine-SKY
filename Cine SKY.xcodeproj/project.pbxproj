@@ -32,6 +32,7 @@
 		9E91B60122889CF500F07088 /* MovieCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E91B60022889CF500F07088 /* MovieCollectionViewCell.swift */; };
 		9E91B6032288A06400F07088 /* Movies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E91B6022288A06400F07088 /* Movies.swift */; };
 		9E91B6052288A0B600F07088 /* MoviesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E91B6042288A0B600F07088 /* MoviesViewModel.swift */; };
+		9E91B6092288AD2F00F07088 /* MovieDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E91B6082288AD2F00F07088 /* MovieDetailTableViewController.swift */; };
 		B1A1181E00BFE367B8E6B486 /* Pods_Cine_SKYTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08BBEE97B7375AAB96C1F003 /* Pods_Cine_SKYTests.framework */; };
 		CFFCA4DBD2D648CBC76EACCC /* Pods_Cine_SKY.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E924B901ED606A0A35C0B48F /* Pods_Cine_SKY.framework */; };
 /* End PBXBuildFile section */
@@ -80,6 +81,7 @@
 		9E91B60022889CF500F07088 /* MovieCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCollectionViewCell.swift; sourceTree = "<group>"; };
 		9E91B6022288A06400F07088 /* Movies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movies.swift; sourceTree = "<group>"; };
 		9E91B6042288A0B600F07088 /* MoviesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewModel.swift; sourceTree = "<group>"; };
+		9E91B6082288AD2F00F07088 /* MovieDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailTableViewController.swift; sourceTree = "<group>"; };
 		E924B901ED606A0A35C0B48F /* Pods_Cine_SKY.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cine_SKY.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED59061453CD67DB1FC87453 /* Pods-Cine SKYTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cine SKYTests.debug.xcconfig"; path = "Target Support Files/Pods-Cine SKYTests/Pods-Cine SKYTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -210,6 +212,7 @@
 			children = (
 				9E91B5FE22889CB500F07088 /* ListMoviesViewController.swift */,
 				9E91B60022889CF500F07088 /* MovieCollectionViewCell.swift */,
+				9E91B6082288AD2F00F07088 /* MovieDetailTableViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -431,6 +434,7 @@
 				9E91B5F322887A2A00F07088 /* Dictionary.swift in Sources */,
 				9E91B5EB22887A2A00F07088 /* GlobalAlert.swift in Sources */,
 				9E91B5F122887A2A00F07088 /* Storyboarded.swift in Sources */,
+				9E91B6092288AD2F00F07088 /* MovieDetailTableViewController.swift in Sources */,
 				9E91B6032288A06400F07088 /* Movies.swift in Sources */,
 				9E91B5F022887A2A00F07088 /* UIColor.swift in Sources */,
 				9E91B5F222887A2A00F07088 /* Request.swift in Sources */,
