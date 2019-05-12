@@ -48,7 +48,7 @@ class Api {
                 return
             }
             
-            var parameters = parametros
+            let parameters = parametros
             let tipoRequisicao = getTipoRequisicao(tipo: metodo)
             var urlRequisicao = ""
             
@@ -73,7 +73,6 @@ class Api {
             
             if tipoRequisicao == .get {
                 encoded = URLEncoding.default
-                parameters["api_key"] = URLs.ApiKey
             }
             
             Alamofire.request(urlRequisicao,

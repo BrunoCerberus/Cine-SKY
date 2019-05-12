@@ -9,9 +9,7 @@
 import Foundation
 
 enum URLs {
-    static let baseUrl = "https://api.themoviedb.org/3/movie"
-    static let baseImagesUrl = "https://image.tmdb.org/t/p/w500/"
-    static let ApiKey = "3f767426720c364fcf885cdb5d079d5f"
+    static let baseUrl = "https://sky-exercise.herokuapp.com/api/"
     
     static var apiEndPoint : String {
         get {
@@ -21,8 +19,6 @@ enum URLs {
     }
     
     //Now playing
-    static let getNowPlaying = "\(apiEndPoint)/now_playing"
-    static let getTopRated = "\(apiEndPoint)/top_rated"
-    static let getPopular = "\(apiEndPoint)/popular"
+    static let getNowPlaying = "\(apiEndPoint)/Movies"
 }
 
